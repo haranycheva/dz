@@ -1,3 +1,8 @@
+:root {
+    --text-color: #49464F;
+    --cube:cubic-bezier(0.4, 0, 0.2, 1)
+}
+
 /* reset */
 
 ul {
@@ -38,4 +43,81 @@ html{
 
 body {
     font-family: 'Roboto';
+    color: var(--text-color);
+}
+
+.container {
+    padding-right: 165px;
+    padding-left: 118px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* header */
+
+.header-cont {
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+    padding: 15px 40px 0;
+    margin: 0 auto;
+}
+
+.logo-svg {
+    margin-right: 478px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.header-btn {
+    background-color: #7140EB;
+    border-radius: 999px;
+    border-color: transparent;
+    padding: 11px 51px 12px;
+    margin-left: 50px;
+
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.nav-menu-item-link {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* members */
+
+.members {
+    padding-top: 68px;
+}
+.members-title {
+    font-size: 66px;
+}
+.members-list {
+    display: flex;
+    gap: 134px;
+    margin-top: 98px;
+}
+.members-list-item-1{
+    width: 246px;
+}
+.members-list-item-2{
+    width: 256px;
+}
+.members-list-item-3{
+    width: 227px;
+}
+.members-list-item-1  .text, .members-list-item-3  .text{
+    margin-bottom: 19px;
+}
+.members-list-item-2  .text{
+    margin-bottom: 54px;
+}
+.text {
+    font-size: 28px;
+}
+.parahraf {
+    font-size: 17px;
+    line-height: 1.4;
 }
