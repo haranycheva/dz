@@ -1,5 +1,6 @@
 :root {
     --text-color: #49464F;
+    --text-color-2:  #2E2C34;
     --cube:cubic-bezier(0.4, 0, 0.2, 1)
 }
 
@@ -44,6 +45,7 @@ html{
 body {
     font-family: 'Roboto';
     color: var(--text-color);
+    line-height: 1;
 }
 
 .container {
@@ -85,11 +87,72 @@ body {
     font-size: 18px;
     color: #FFFFFF;
 }
+/* want to know more? */
+
+.know-more {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background-color: #F5F5F7;;
+}
+
+.know-more-container {
+    padding-right: 160px;
+    display: flex;
+    gap: 202px;
+}
+
+.know-more-title {
+    margin-top: 116px;
+    margin-bottom: 53px;
+    font-size: 67px;
+    color: var(--text-color-2);
+    width: 235px;
+    line-height: 1;
+}
+
+.more {
+    display: block;
+    padding-left: 5px;
+}
+
+.know-more-btn {
+    border: 1px solid var(--text-color-2);
+    background-color: transparent;
+    width: 180px;
+    height: 39px;
+    border-radius: 999px;
+}
+
+.know-more-list {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.know-more-list-item {
+    position: relative;
+    padding-left: 45px;
+    font-size: 21px;
+    line-height: 1.2;
+    color: var(--text-color-2);
+}
+
+.know-more-list-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 17px;
+    width: 17px;
+    background-image: url(../img/plus.svg#plus);
+}
 
 /* members */
 
 .members {
     padding-top: 68px;
+    padding-bottom: 73px;
 }
 .members-title {
     font-size: 66px;
@@ -112,7 +175,7 @@ body {
     margin-bottom: 19px;
 }
 .members-list-item-2  .text{
-    margin-bottom: 54px;
+    margin-bottom: 47px;
 }
 .text {
     font-size: 28px;
